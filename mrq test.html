@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	    <title>UWU ASSIST</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="mrqtest.css">
+        <link rel="stylesheet" href="services.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    </head>
+    
+<body>
+    
+<!---------------------------------------------------------------------HOME PAGE---------------------------------------------------------------->
+    
+    <div id="mySidenav" class="sidenav">
+     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+        <a href="#">HOME</a>
+        <a href="#">ABOUT</a>
+        <a href="#">SERVICES</a>
+        <a href="#">SIGNUP</a>
+    </div>
+    
+    <div class="marquee">
+        <div align="right" id="main">
+            <span style="font-size:30px;cursor:pointer" "color: rgb(225,225,225);" onclick="openNav()">&#9776;</span>
+            
+            
+        <div class="container">
+            <div classname="title-1" style="position: absolute !important; z-index: 3; top:35vh;">        
+                <h1 align="center" justify="center"  data-aos="fade-up"  data-aos-duration="1500">WELCOME TO UWU ASSIST</h1> 
+            </div>
+            
+            <div  classname="slide-marquee">
+                <ul class="marquee-content" >
+                <li><img src="mimages/medical%20center%20png.png"></li>
+                <li><img src="mimages/cafeteria%20png.png"></li>
+                <li><img src="mimages/hostals%20png.png"></li>
+                <li><img src="mimages/transport%20png.png"></li>
+                </ul>
+            </div>
+        
+        </div> 
+            
+        </div>
+        
+            <script>
+                const root = document.documentElement;
+                const marqueeElementsDisplayed = getComputedStyle(root).getPropertyValue("--marquee-elements-displayed");
+                const marqueeContent = document.querySelector("ul.marquee-content");
+
+                root.style.setProperty("--marquee-elements", marqueeContent.children.length);
+
+                for(let i=0; i<marqueeElementsDisplayed; i++) {
+                marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
+                }
+        </script>
+     
+     </div>     
+    
+     
+    
+
+   
+       
+   
+    
+
+    
+
+    
+<!---------------------------------------------------------------------HOME PAGE is over-------------------------------------------------------->
+  
+     <div classname="shop-head">
+        <section class="Shop">
+      
+            <h2>SERVICES</h2>
+              <P>you can buy all sporting goods under one roof</P>
+            
+            <div class="row">
+                  <div class="shop-col">
+                    <a href="shop_goods.html#sport-wear" class=""> <img src="images/medical.jpg">
+                    <div class="layer">
+                       <h3>MEDICAL CENTER</h3>
+                   </div> </a>
+                </div>
+                
+                <div class="shop-col"> 
+                    <a href="shop_goods.html" class=""> <img src="images/cafeteria.png">
+                      <div class="layer">
+                       <h3>CAFFETARIA</h3>
+                   </div> </a>
+                </div>
+              
+                 <div class="shop-col">
+                    <a href="hostals.html" class=""> <img src="images/hostal.png">
+                    <div class="layer">
+                       <h3>HOSTALS</h3>
+                   </div> </a>
+                </div>
+                
+      
+                <div class="shop-col"> 
+                    <a href="shop_goods.html" class=""> <img src="images/cafeteria.png">
+                      <div class="layer">
+                       <h3>TRANSPORT</h3>
+                   </div> </a>
+                </div>
+                
+                
+           </div>
+            
+          
+        </section>
+
+     </div>
+     
+    
+<!---------------------------------------------------------------------SERVICE PAGE is over----------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------------------------------------------------->
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginRight = "250px";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+            }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginRight= "0";
+            document.body.style.backgroundColor = "white";
+            }
+    </script>
+</body>
+</html> 
