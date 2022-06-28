@@ -6,7 +6,7 @@
 
 body {
     font-family: "Lato", sans-serif;
-    /* overflow: hidden; */
+    overflow-x: hidden;
     }
 
 
@@ -24,15 +24,11 @@ body {
     position: relative;
 }
 
-/* .title-1{
-    position: absolute !important;  
-    z-index: 3;
-    top:50%;
-} */
 
 .slide-marquee{
 
 }
+
 /*--------------------------side navigation panel--------------------*/
 
 .sidenav {
