@@ -7,7 +7,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="UWU_ASSIST.css">
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <link rel="stylesheet" href="Loginpage.css">
         <link rel="stylesheet" href="SignupPage.css">
         <link rel="stylesheet" href="sevice2.css">
     </head>
@@ -15,17 +14,17 @@
 <body>
     
 <!---------------------------------------------------------------------HOME PAGE---------------------------------------------------------------->
-    
+
     <div id="mySidenav" class="sidenav">
+       
      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     
         <a href="#">HOME</a>
         <a href="#">ABOUT</a>
-        <a href="services2.html">SERVICES</a>
-        <a href="#">SIGNUP</a>
+        <a href="#service">SERVICES</a>
+        <a href="Login and sign up/Loginpage.html">SIGNUP</a>
     </div>
 
-    <a href=""><img src="miages/logo green.png" align="left"></a>
     
     <div class="marquee">
         <div align="right" id="main">
@@ -82,12 +81,15 @@
 
 <!---------------------------------------------------------------------SERVICE PAGE---------------------------------------------------------------->
 
-
-<h2>SERVICES</h2>
-<P>choose your service</P>
+<div class="h2">
+    <h2 id="service" style="position: absolute !important; z-index: 3; text-align: center;" font-color="225,225,225">SERVICES</h2>
+</div>
+<div>
+    <P style="position: absolute !important; z-index: 3; text-align: center;">choose your service</P>
+</div>
 
 <div class="slide-container">
-
+   
 <span class="slider-span" id="slider-span1"></span>
 <span class="slider-span" id="slider-span2"></span>
 <span class="slider-span" id="slider-span3"></span>
@@ -99,7 +101,7 @@
    
    <div class="slides-div" id="slide-2"><img src="images/cafeteria.png" alt="" class="img" id="img2"><a href="#slider-span2" class="button" id="button2"></a>CAFETERIA</div>
    
-   <div class="slides-div" id="slide-3"><img src="images/hostal.png" alt="" class="img" id="img3"><a href="#slider-span3" class="button" id="button3"></a><a href="hostals.html">HOSTELS</a></div>
+   <div class="slides-div" id="slide-3"><img src="images/hostal.png" alt="" class="img" id="img3"><a href="#slider-span3" class="button" id="button3"></a><a color: rgb(255, 255, 255) href="hostals.html">HOSTELS</a></div>
    
    <div class="slides-div" id="slide-4"><img src="images/gallery.jpg" alt="" class="img" id="img4"><a href="#slider-span4" class="button" id="button4">TRANSPORT</a></div>
 
@@ -111,26 +113,7 @@
 
 <!---------------------------------------------------------------------SERVICE PAGE is over-------------------------------------------------------->
 
-<!---------------------------------------------------------------------LOG IN PAGE----------------------------------------------------------------->
-
-     
-     <div class="box">
-        <h2>Log In</h2>
-        <h4><center>Don't have an account? <a href = "SignupPage.html" style="text-decoration: none" >Sign Up </a></center></h4>
-        <form>
-            <div class="inputBox">
-                <input type="email" name="" required="" autocomplete="on">
-                <label>E-mail</lable>
-            </div>
-            <div class="inputBox">
-                <input type="password" name="" required="">
-                <label>Password</lable>
-            </div>
-
-            <input type="submit" name="submit" value="Login" />
-
-        </form>
-     </div>
+<!---------------------------------------------------------------------ABOUT PAGE----------------------------------------------------------------->
 
 <!---------------------------------------------------------------------LOG IN PAGE is over------------------------------------------------------>
 <!---------------------------------------------------------------------------------------------------------------------------------------------->

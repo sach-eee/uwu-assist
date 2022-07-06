@@ -8,8 +8,8 @@
  
 
  .h2{
-   z-index: 1;
-   color: #111;
+   z-index: 3;
+   color: rgb(255,255,255);
    font-size: 70px;
    text-transform: uppercase;
    font-weight: 800;
@@ -36,6 +36,9 @@ body {
     overflow: hidden;
     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(uwu1.jpg);
     }
+
+
+
     
     .image-slider{
         width: 100%;
