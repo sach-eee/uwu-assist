@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <mata name="viewport" content="with=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="uwuassist.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+
+    <div class="transport-descriptions">
+        <h1>Do Your Works More Easier With US</h1>
+        <div class="transport-container">
+            <div class="indicator">
+                <span class="btn active"></span>
+                <span class="btn"></span>
+            </div>
+            <div class="uwuassist-transport">
+                <div class="slide-row" id="slide">
+                    <div class="slide-col">
+                        <div class="About-Uni-Transport">
+                            <p>Our main duties are providing transport facilities to the Staff and Students for the 
+                            Academic and Administrative purposes.</p>
+                            <p><br>Call us for any querry <br>055 2563 548</p>
+                        </div>
+                        <div class="About-Uni-Transport-img">
+                            <img src="photos/unitransport.jpg">
+                        </div>
+                    </div>
+
+                    <div class="slide-col">
+                        <div class="About-Public-Transport">
+                            <p>Buses are the principal mode of public transport. Service is provided by the state-run
+                            Sri Lanka Transport Board (SLTB) and privately owned buses.</p>
+                            <p><br><P><a href="http://sltbbus.blogspot.com/">Click for More</a> </P></p>
+                        </div>
+                        <div class="About-Public-Transport-img">
+                            <img src="photos/publictransport.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <section class="university-transport-system">
+        <div class="university-transport-system-title">
+            <h1>University Transport</h1>
+            <p>General Administration Division - Applications</p>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h4>Vehicle request form</h4>
+                <p>To reserve a  vehicle for college-related travel, download the vehicle request form and and submit the completed form.</p>
+                <p><br><a href="./vehicle_request_form.docx" download class="download-btn">Download</a></p>
+            </div>
+            <div class="col">
+                <h4>Field trip request form</h4>
+                <p>When requesting a field trip, download the field request form and submit completed form at least 3 weeks before you need the bus.</p>
+                <p><br><a href="./field_trip_request_form.docx" download class="download-btn">Download</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="uni-transport-timetable">
+            <h1>Catch university transport</h1>
+            <p><br>you can catch your transport with these times</p>
+            <table>
+                    <tr>
+                        <th>Bus Number</th>
+                        <th>Arriving Time</th>
+                        <th>Decarture Time</th>
+                        </tr>
+                    <tr>
+                        <td>UWU/TD/1</td>
+                        <td>6.30am</td>
+                        <td>5.30am</td>
+                     </tr>
+                    <tr>
+                        <td>UWU/TD/2</td>
+                        <td>7.30am</td>
+                        <td>not available</td>
+                    </tr>
+                    <tr>
+                        <td>UWU/TD/1</td>
+                        <td>1.00pm</td>
+                        <td>6.30pm</td>
+                    </tr>
+            </table>
+        </div>
+    </section>
+
+    <section class="public-transport">  
+        <div class="public-transport-title">
+            <h1><br>Other Transports</h1>
+            <p>Call and hire your wheel</p>
+        </div>
+        <section class="private-wheel-transport">
+            <div class="container">
+                <div class="box">
+                    <div class="imgBx">
+                        <img src="photos/wheel.jpg">
+                    </div>
+                    <div class="content">
+                        <div>
+                            <h4>Jonny Pie</h4>
+                            <p>Contact Number- 0718283167</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imgBx">
+                                <img src="photos/wheel.jpg">
+                    </div>
+                    <div class="content">
+                        <div>
+                            <h4>Husan cooray</h4>
+                            <p>Contact Number- 0776969146</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bus-timetable">
+            <h1>Public transport</h1>
+            <p><br>Follow these times to catch public buses</p>
+            <table>
+                    <tr>
+                        <th>bus Root</th>
+                        <th>Availables times</th>
+                        </tr>
+                    <tr>
+                        <td>UWU/TD/1</td>
+                        <td>6.30am</td>
+                     </tr>
+                    <tr>
+                        <td>UWU/TD/2</td>
+                        <td>7.30am</td>
+                    </tr>
+                    <tr>
+                        <td>UWU/TD/1</td>
+                        <td>1.00pm</td>
+                    </tr>
+            </table>
+        </section>
+    </section>
+    
+    
+
+
+    
+    <script>
+        var btn=document.getElementsByClassName("btn");
+        var slide=document.getElementById("slide");
+        
+        btn[0].onclick=function(){
+            slide.style.transform="translatex(0px)";
+            for(i=0;i<2;i++){
+                btn[i].classList.remove("active");
+            }
+            this.classList.add("active");
+        }
+        btn[1].onclick=function(){
+            slide.style.transform="translatex(-1250px)";
+            for(i=0;i<2;i++){
+                btn[i].classList.remove("active");
+            }
+            this.classList.add("active");
+            
+        }
+    </script>
+
+    
+    
+</body>
+</html>

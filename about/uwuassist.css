@@ -1,0 +1,577 @@
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s;
+}
+
+
+
+/*----------------About us page---------------*/
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    background: white;
+}
+.about{
+    height: 100vh;
+    width: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about .about-main img{
+    width: 580px;
+    max-width: 100%;
+    height: auto;
+    padding: 0 10px;
+}
+
+.all-text{
+    width: 600px;
+    max-width: 100%;
+    padding: 0 10px;
+}
+
+.about-main{
+    width: 1290px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.all-text h4{
+    font-family: sans-serif;
+    font-size: 18px;
+    color: #777777;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.all-text h1{
+    font-size: 65px;
+    color: #111111;
+    font-weight: 700;
+    margin-bottom: 20px;
+
+}
+
+.all-text p{
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #77777777;
+    line-height: 30px;
+    margin-bottom: 35px;
+}
+
+.aboutbutton{
+    background: white;
+    padding: 20px 32px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #111111;
+    border: none;
+    outline: none;
+    box-shadow: 0px 16px 32px 0px rgb(0 0 0 / 6% );
+    margin-right: 20px;
+
+}
+
+.aboutbutton:hover{
+    background-color: black;
+    color: white;
+    transition: .3s;
+    cursor: pointer;
+
+}
+
+
+
+
+
+
+/*-------team section---------*/
+.team_section{
+    min-height: 100vh;
+    width: 100%;
+    background-color: white;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+  
+.mainfoaboutpage{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.titelofaboutpage h1{
+      font-size: 60px;
+      color: black;
+      text-align: center;
+      padding-top: 60px;
+}
+
+.profile-card-team{
+    position: relative;
+    font-family: sans-serif;
+    width: 200px;
+    height: 220px;
+    background: white;
+    padding: 30px;
+    border-radius: 50%;
+    box-shadow: 0 0 22px #3336;
+    transition: .6s;
+    margin: 0 25px;
+}
+.profile-card-team:hover{
+    border-radius: 10px;
+    height: 260px;
+}
+.profile-card-team .aboutpage-team-img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: .6s;
+    z-index: 99;
+}
+.profile-card-team:hover .aboutpage-team-img{
+    transform: translateY(-60px);
+}
+.aboutpage-team-img img{
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 22px #3336;
+    transition: .6s;
+  }
+.profile-card-team:hover img{
+    border-radius: 10px;
+  }
+.profile-card-team-caption{
+    text-align: center;
+    transform: translateY(-120px);
+    opacity: 0;
+    transition: .6s;
+}
+.profile-card-team:hover .profile-card-team-caption{
+    opacity: 1;
+}
+.profile-card-team-caption h3{
+    font-size: 18px;
+    font-family: sans-serif;
+}
+.profile-card-team-caption p{
+    font-size: 15px;
+    color: #0c2fa1;
+    font-family: sans-serif;
+    margin: 2px 0 9px 0;
+}
+.profile-card-team-caption .profile-card-team-social-links a{
+    color: #333;
+    margin-right: 15px;
+    font-size: 22px;
+    transition: .6s;
+}
+.profile-card-team-social-links a:hover{
+    color: #0c40a1;
+}
+
+
+
+/*-----------------------Transport Page-----------------*/
+/*----slider----*/
+.transport-descriptions{
+    background: rgb(192, 238, 192);
+    height: 100vh;  
+    width: 100%;
+    position: relative;
+}
+.transport-descriptions h1{
+    text-align: center;
+    padding-top: 80px;
+    font-size: 40px;
+    color: darkgreen;
+}
+.slide-row{
+    display: flex;
+    width: 2500px;
+    transition: 0.5s;
+}
+.slide-col{
+    width: 1250px;
+    height: 400px; 
+    position: relative;
+}
+.About-Uni-Transport-img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 750px;
+}
+.About-Uni-Transport-img img{
+    border-radius: 10px;
+    height: 100%;  
+}
+.About-Public-Transport-img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 750px;
+}
+.About-Public-Transport img{
+    border-radius: 10px;
+    height: 100%;  
+}
+.About-Uni-Transport, .About-Public-Transport{
+    width: 520px;
+    height: 270px;
+    position: absolute;
+    left: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 10px;
+    color: #d3d4d6;
+    padding: 45px;
+    box-sizing: border-box;
+    z-index: 2;
+}
+.About-Uni-Transport{
+    background: rgb(1, 46, 1);
+}
+.About-Public-Transport{
+    background: rgb(1, 46, 1);
+}
+.About-Public-Transport a{
+    background: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #111111;
+    border: none;
+    outline: none;
+    box-shadow: 0px 16px 32px 0px rgb(0 0 0 / 6% );
+    margin-right: 20px;
+}
+.About-Public-Transport a:hover{
+    background-color: rgb(8, 30, 8);
+    color: white;
+    transition: .3s;
+    cursor: pointer;
+}
+.About-Uni-Transport, .About-Public-Transport p{
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.transport-container{
+    width: 1240px;
+    height: 400px;     
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.indicator{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -50px;
+}
+.btn{
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    margin: 4px;
+    border-radius: 15px;
+    background: black;
+    cursor: pointer;
+    transition: 0.06s;
+}
+.active{
+    width: 45px;
+}
+.uwuassist-transport{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/*--------------university transport system------*/
+.university-transport-system{
+    margin: 80px auto;
+    width: 80%;
+}
+.university-transport-system-title{
+    text-align: center;
+    font-size: 4vmin;
+    color: darkgreen;
+}
+.university-transport-system .row{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.university-transport-system h4{
+    text-align: center;
+    font-size: 3vmin;
+    margin: 20px auto;
+    color: #484848;
+
+}
+.university-transport-system p{
+    color: #7c7c7c;
+    padding: 0px 40px;
+    font-size: 15px;
+}
+
+.university-transport-system .download-btn{
+    background: white;
+    padding: 8px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #111111;
+    border: none;
+    outline: none;
+    margin-top: 100px;
+
+}
+.university-transport-system .download-btn:hover{
+    background-color: rgb(1, 46, 1);
+    color: white;
+    transition: .3s;
+    cursor: pointer;
+
+}
+/*-----------university transport timetable--------*/
+.uni-transport-timetable table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid white;
+
+}
+.uni-transport-timetable h1,p{
+    text-align: center;
+}
+.uni-transport-timetable h1{
+    font-size: 3vmin;
+}
+.uni-transport-timetable p{
+    font-size: 15px;
+}
+
+.uni-transport-timetable th,td{
+    text-align: center;
+    padding: 15px;
+    font-size: medium;
+}
+.uni-transport-timetable tr:nth-child(even){
+    background-color: lightgreen;
+}
+.uni-transport-timetable th{
+    background-color: #163508;
+    color: white;
+}
+.uni-transport-timetable tr:hover{
+    background-color: rgb(35, 123, 35);
+    color: white;
+    font-size: larger;
+    transform: scale(1.02);
+}
+
+/*--------other transports-----*/
+
+.public-transport{
+    margin: 80px auto;
+    width: 80%;
+
+}
+.public-transport-title{
+    text-align: center;
+    font-size: 4vmin;
+    color: darkgreen;
+}
+.public-transport-title p{
+    color: #7c7c7c;
+    padding: 0px 40px;
+    font-size: 15px;
+}
+
+
+/*    wheels    */
+.private-wheel-transport{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
+
+.private-wheel-transport .container{
+    position: relative;
+    width: 1100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.private-wheel-transport .container .box{
+    position: relative;
+    width: 275px;
+    height: 275px;
+    overflow: hidden;
+    transition: 0.5s;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.private-wheel-transport .container .box:hover{
+    z-index: 1;
+    transform: scale(1.25);
+    box-shadow: 0 25px 40px rgba(0, 0, 0, 0.5);
+}
+.private-wheel-transport .container .box .imgBx{
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+}
+.private-wheel-transport .container .box .imgBx::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: linear-gradient(180deg,rgb(12, 117, 49),#000);
+    mix-blend-mode: multiply;
+    opacity: 0;
+    transition: 0.5s;
+}
+.private-wheel-transport .container .box:hover .imgBx::before{
+    opacity: 1;
+}
+.private-wheel-transport .container .box .imgBx img{
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.private-wheel-transport .container .box .content{
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    padding: 20px;
+    align-items: flex-end;
+}
+.private-wheel-transport .container .box .content h4{
+    color: white;
+    transition: 0.5s;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-size: 15px;
+    transform: translateY(200px);
+}
+.private-wheel-transport .container .box:hover .content h4{
+    transform: translateY(0);
+    transition-delay: 0.4s;
+}
+.private-wheel-transport .container .box .content p{
+    color: white;
+    transform: translateY(200px);
+    transition: 0.5s;
+    font-size: 14px;
+}
+.private-wheel-transport .container .box:hover .content p{
+    transform: translateY(0);
+    transition-delay: 0.5s;
+
+}
+.private-wheel-transport h1{
+    text-align: center;
+    font-size: 4vmin;
+    color: darkgreen;
+}
+.private-wheel-transport p{
+    text-align: center;
+    font-size: 2vmin;
+    margin: 20px auto;
+    color: #484848;
+}
+
+/*     bus timetable    */
+.public-transport .bus-timetable table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid white;
+
+}
+.public-transport .bus-timetable h1,p{
+    text-align: center;
+}
+.public-transport .bus-timetable h1{
+    font-size: 3vmin;
+}
+.public-transport .bus-timetable p{
+    font-size: 15px;
+}
+.public-transport .bus-timetable th,td{
+    text-align: center;
+    padding: 15px;
+    font-size: medium;
+}
+.public-transport .bus-timetable tr:nth-child(even){
+    background-color: lightgreen;
+}
+.public-transport .bus-timetable th{
+    background-color: #163508;
+    color: white;
+}
+.public-transport .bus-timetable tr:hover{
+    background-color: rgb(35, 123, 35);
+    color: white;
+    font-size: larger;
+    transform: scale(1.02);
+}
+
+/*link colors*/
+
+.aboutbutton a:link{
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 20px 32px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    box-shadow: 0px 16px 32px 0px rgb(0 0 0 / 6% );
+    margin-right: 20px;
+  }
+  
+  .aboutbutton a:hover{
+    background-color: black;
+    color: white;
+    transition: .3s;
+    cursor: pointer;
+  }
+  
