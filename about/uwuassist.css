@@ -18,7 +18,8 @@ html{
     background: white;
 }
 .about{
-    height: 100vh;
+    /* height: 100vh; */
+    margin-top: 10rem;
     width: 100%;
     background: white;
     display: flex;

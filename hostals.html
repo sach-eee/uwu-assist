@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+  <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"></head>
 <body>
     <div class="iframe-container">
         <!--iframe link is the link to the jsfiddle-->
@@ -10,8 +11,126 @@
         .iframe-container {
               text-align:center;
         }
+
+        *{
+          transition: 0.2s;
+        }
+
+        .uni-transport-timetable table{
+            border-collapse: collapse;
+            border-spacing: 0;
+            width: 100%;
+            border: 1px solid white;
+
+           }
+        .uni-transport-timetable h1,p{
+            text-align: center;
+        }
+        .uni-transport-timetable h1{
+            font-size: 3vmin;
+        }
+        .uni-transport-timetable p{
+            font-size: 15px;
+        }
+
+        .uni-transport-timetable th,td{
+            text-align: center;
+            padding: 15px;
+            font-size: medium;
+        }
+        .uni-transport-timetable tr:nth-child(even){
+            background-color: rgb(150, 29, 248);
+        }
+        .uni-transport-timetable th{
+            background-color: #3997f0;
+            color: white;
+        }
+        .uni-transport-timetable tr:hover{
+            background-color: rgb(99, 4, 177);
+            color: white;
+            font-size: larger;
+            transform: scale(1.02);
+        }
+
       </style>
-    
+
+
+  <section class="uni-transport-timetable">
+        <h1>Check Below Table for Hostels</h1>
+        <p><br>you can find your hostel using this table</p>
+    <table>
+            <tr>
+                <th>GIRL'S HOSTELS</th>
+                <th>BOY'S HOSTELS</th>
+                
+                </tr>
+            <tr>
+                <td>Walawwa  A</td>
+                <td>Walawwa  E</td>
+                
+             </tr>
+            <tr>
+                <td>Kadalla</td>
+                <td>Knuckels B</td>
+                
+            </tr>
+            <tr>
+                <td>Hanthana D</td>
+                <td>Hanthana C</td>
+                
+            </tr>
+
+            <tr>
+              <td>Jayagama C</td>
+              <td>Knuckels A</td>
+              
+              </tr>
+          <tr>
+              <td>Hindagoda C</td>
+              <td>Knuckels C</td>
+              
+           </tr>
+          <tr>
+              <td>Hindagoda E</td>
+              <td>Uduwela</td>
+              
+          </tr>
+          <tr>
+              <td>Samanala A</td>
+              <td>Rambukpotha</td>
+              
+          </tr>
+
+          <tr>
+            <td>Samanala B</td>
+            <td>Jayagama A</td>
+            
+            </tr>
+        <tr>
+            <td>Samanala C</td>
+            <td>Ganga Addara</td>
+            
+         </tr>
+        <tr>
+            <td>Hanwalla</td>
+            <td></td>
+            
+        </tr>
+        <tr>
+            <td>Sarwodaya</td>
+            <td></td>
+            
+        </tr>
+
+        <tr>
+          <td>Kalaniya A</td>
+          <td></td>
+          
+          </tr>
+    </table>
+</div>
+</section>
+
   
 </body>
 </html> 

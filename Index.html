@@ -7,50 +7,62 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="UWU_ASSIST.css">
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <link rel="stylesheet" href="Login and sign up/SignupPage.css">
-        <link rel="stylesheet" href="Login and sign up/Loginpage.css">
+        <!-- <link rel="stylesheet" href="Login and sign up/SignupPage.css"> -->
+        <!-- <link rel="stylesheet" href="Login and sign up/Loginpage.css"> -->
         <link rel="stylesheet" href="sevice2.css">
         <link rel="stylesheet" href="about/uwuassist.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <link rel="stylesheet" href="css/bootstrap-grid.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+
     </head>
     
 <body>
     
 <!---------------------------------------------------------------------HOME PAGE---------------------------------------------------------------->
 
+
     <div id="mySidenav" class="sidenav">
-       
-     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     
         <a href="#">HOME</a>
         <a href="#about">ABOUT</a>
         <a href="#service">SERVICES</a>
         <a href="Login and sign up/Loginpage.html">SIGNUP</a>
     </div>
+    
+
 
     
     <div class="marquee">
-        <div align="right" id="main">
-            <span style="font-size:30px;cursor:pointer" "color: rgb(225,225,225);" onclick="openNav()">&#9776;</span>
+        <div  id="main">
+
+            <div class="col-md-12 d-flex">
+                <div>
+                    <img src="mimages/logo white.png" alt="logo" class="col-md-1" />
+                </div>
+
+                <span style="font-size:30px;cursor:pointer" "color: rgb(225,225,225);" onclick="openNav()">&#9776;</span>
             
-     
-            
-        <div class="container">
-            
-            <div classname="title-1" style="position: absolute !important; z-index: 3; top:35vh; width:100vw; text-align: center;">        
-                <h1 data-aos="fade-up"  data-aos-duration="1500">WELCOME TO UWU ASSIST</h1> 
             </div>
             
-            <div  classname="slide-marquee">
-                <ul class="marquee-content" >
-                <li><img src="mimages/medical%20center%20png.png"></li>
-                <li><img src="mimages/cafeteria%20png.png"></li>
-                <li><img src="mimages/hostals%20png.png"></li>
-                <li><img src="mimages/transport png2.png"></li>
-                </ul>
-            </div>
-        
-        </div> 
+            <div class="container">
+                
+                <div classname="title-1" style="position: absolute !important; z-index: 3; top:35vh; width:100vw; text-align: center;">        
+                    <h1 data-aos="fade-up"  data-aos-duration="1500">WELCOME TO UWU ASSIST</h1> 
+                </div>
+                
+                <div  classname="slide-marquee">
+                    <ul class="marquee-content" >
+                    <li><img src="mimages/medical%20center%20png.png"></li>
+                    <li><img src="mimages/cafeteria%20png.png"></li>
+                    <li><img src="mimages/hostals%20png.png"></li>
+                    <li><img src="mimages/transport png2.png"></li>
+                    </ul>
+                </div>
+            
+            </div> 
             
         </div>
         
@@ -83,39 +95,41 @@
 
 
 <!---------------------------------------------------------------------SERVICE PAGE---------------------------------------------------------------->
+<div class="slider-main">
 
-<div class="title">
-    <h2 id="service" style="position: absolute !important; z-index: 3; text-align: center;">SERVICES</h2>
+
+    <div class="title">
+        <h2 id="service" style="z-index: 3; text-align: center;">SERVICES</h2>
+    </div>
+    <div>
+        <P style="z-index: 3; text-align: center; color: white; font-size: medium;">choose your service</P>
+    </div>
+
+    <div class="slide-container">
+    
+        <span class="slider-span" id="slider-span1"></span>
+        <span class="slider-span" id="slider-span2"></span>
+        <span class="slider-span" id="slider-span3"></span>
+        <span class="slider-span" id="slider-span4"></span>
+
+        <div class="image-slider">
+            <style>
+            
+            </style>
+        
+            <div class="slides-div" id="slide-1"><img src="mimages/medi2test.png" alt="" class="img" id="img1"><a href="#slider-span1" class="button" id="button1"><a href="">MEDICAL CENTER</a></a></div> 
+            
+            <div class="slides-div" id="slide-2"><img src="mimages/cafeteria png l.png" alt="" class="img" id="img2"><a href="#slider-span2" class="button" id="button2"></a><a href="">CAFETERIA</a></div>
+            
+            <div class="slides-div" id="slide-3"><img src="mimages/hostals lo.png" alt="" class="img" id="img3"><a href="#slider-span3" class="button" id="button3"></a><a href="hostals.html">HOSTELS</a></div>
+            
+            <div class="slides-div" id="slide-4"><img src="mimages/transport pngtest.png" alt="" class="img" id="img4"><a href="#slider-span4" class="button" id="button4"><a href="about/transport.html">TRANSPORT</a></div>
+
+        </div>
+
+
+    </div>
 </div>
-<div>
-    <P style="position: absolute !important; z-index: 3; text-align: center;">choose your service</P>
-</div>
-
-<div class="slide-container">
-   
-<span class="slider-span" id="slider-span1"></span>
-<span class="slider-span" id="slider-span2"></span>
-<span class="slider-span" id="slider-span3"></span>
-<span class="slider-span" id="slider-span4"></span>
-
-<div class="image-slider">
-    <style>
-      
-    </style>
-   
-   <div class="slides-div" id="slide-1"><img src="mimages/medi2test.png" alt="" class="img" id="img1"><a href="#slider-span1" class="button" id="button1">MEDICAL CENTER</a></div> 
-   
-   <div class="slides-div" id="slide-2"><img src="images/cafeteria.png" alt="" class="img" id="img2"><a href="#slider-span2" class="button" id="button2"></a>CAFETERIA</div>
-   
-   <div class="slides-div" id="slide-3"><img src="images/hostal.png" alt="" class="img" id="img3"><a href="#slider-span3" class="button" id="button3"></a><a href="hostals.html">HOSTELS</a></div>
-   
-   <div class="slides-div" id="slide-4"><img src="mimages/transport pngtest.png" alt="" class="img" id="img4"><a href="#slider-span4" class="button" id="button4"><a href="about/transport.html">TRANSPORT</a></div>
-
-</div>
-
-
-</div>
-
 
 <!---------------------------------------------------------------------SERVICE PAGE is over-------------------------------------------------------->
 
@@ -157,7 +171,7 @@
                 <h3>Sachira Gavinda</h3>
                 <p>Team Leader</p><br>
                 <div class="profile-card-team-social-links">
-                    <a href="https://www.facebook.com/sachira.karunarathna.589"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.facebook.com/sachira.karunarathna.589" target="_blank"><i class="fab fa-facebook"></i></a>
                     <a href="#"><i class="fab fa-instagram"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
                 </div>
@@ -171,8 +185,8 @@
                 <h3>Sunethma Sethmini</h3>
                 <p>Front-end developer</p>
                 <div class="profile-card-team-social-links">
-                    <a href="https://www.facebook.com/nethu.gamlath.9"><i class="fab fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/___gad_s_x_n_x___/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/nethu.gamlath.9" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/___gad_s_x_n_x___/"  target="_blank"><i class="fab fa-instagram"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
                 </div>
             </div>
@@ -185,7 +199,7 @@
               <h3>Kavishan Edirisinghe</h3>
               <p>Back-end developer</p>
               <div class="profile-card-team-social-links">
-                  <a href="https://www.facebook.com/kavishan.edirisinghe"><i class="fab fa-facebook"></i></a>
+                  <a href="https://www.facebook.com/kavishan.edirisinghe" target="_blank"><i class="fab fa-facebook"></i></a>
                   <a href="#"><i class="fab fa-instagram"></i></a>
                   <a href="#"><i class="fab fa-twitter"></i></a>
               </div>
@@ -199,8 +213,8 @@
                 <h3>Binadi Mandini</h3>
                 <p>Designer</p><br>
                 <div class="profile-card-team-social-links">
-                    <a href="https://www.facebook.com/binadhi.perera"><i class="fab fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/biisaaayyyyy/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/binadhi.perera"  target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/biisaaayyyyy/"  target="_blank"><i class="fab fa-instagram"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
                 </div>
             </div>
@@ -213,8 +227,8 @@
                 <h3>Madura Bhashitha</h3>
                 <p>Front-end developer</p>
                 <div class="profile-card-team-social-links">
-                    <a href="https://www.facebook.com/search/top/?q=madura%20bashitha"><i class="fab fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/___madura___/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/search/top/?q=madura%20bashitha"  target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/___madura___/" target="_blank"><i class="fab fa-instagram"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
                 </div>
             </div>
@@ -227,7 +241,7 @@
                 <h3>Sandeepani Thathsarani</h3>
                 <p>Designer</p><br>
                 <div class="profile-card-team-social-links">
-                    <a href="https://www.facebook.com/sandeepani.thathsarani.7"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.facebook.com/sandeepani.thathsarani.7" target="_blank"><i class="fab fa-facebook"></i></a>
                     <a href="#"><i class="fab fa-instagram"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
                 </div>
