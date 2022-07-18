@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Uva Wellassa University</title>
+
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css">
+
+
+ body {
+  background-image: url('bc.jpg');
+   background-repeat: no-repeat;
+
+}
+
+
+
+
+  footer {
+        padding: 10px 20px;
+        background: rgb(241,195,6);
+background: linear-gradient(90deg, rgba(241,195,6,1) 37%, rgba(218,148,5,1) 50%);
+        color: black;
+      }
+
+        *{
+    font-family:'Comfortaa', cursive;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-size: 13px;
+
+  }
+  .container{
+    max-width:1200;
+    margin:0 auto;
+
+  }
+  .container > h1{
+    padding:20px 0;
+  }
+  .cart{
+    display:flex;
+  }
+  .products{
+    flex: 1;
+
+  }
+  .product{
+    display:flex;
+    width:100%;
+    height:200px;
+    overflow:hdden;
+    border: 1px solid silver;
+    margin-bottom: 20px;
+
+  }
+  .product:hover{
+    border: none;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    transform:scale(1.01);
+  }
+  .product > img{
+    width: 300px;
+    height:200px;
+    object-fit: cover;
+  }
+  .product > img:hover{
+    transform: scale(1.04); 
+  }
+  .product-info{
+    padding: 20px;
+    width: 100%;  
+    position: relative;
+  }
+  .product-name, .product-price, .product-quantity{
+    margin-bottom:20px ;
+  }
+
+
+</style>
+
+</head>
+<body>
+
+<header>
+  <br>
+  <p style="text-align:center;font-size: 45px; font-family: Heineken; color: black;">Desserts </p>
+</header>
+<br>
+
+</head>
+<br>
+<body>
+<div class="container">
+  <div class="cart">
+    <div class="products">
+      <div class="product">
+        <img src="yg.jpg">
+        <div class="product-info">
+          <h3 class="product-name">yoghurt</h3>
+          <h3 class="product-price">Rs.50/=</h3>
+          <h3 class="product-quantity">Available Qunatity : 400</h3>
+        </div>
+      </div>
+      <div class="product">
+        <img src="f.jpg">
+        <div class="product-info">
+          <h3 class="product-name">Fruit Salad</h3>
+          <h3 class="product-price">Rs.100/=</h3>
+          <h3 class="product-quantity">Available Quantity : 20</h3>
+        </div>
+      </div>
+      <div class="product">
+        <img src="i.png">
+        <div class="product-info">
+          <h3 class="product-name">Ice cream</h3>
+          <h3 class="product-price">Rs.100/=</h3>
+          <h3 class="product-quantity">Available Quantity : 75</h3>
+        </div>
+      </div>
+      
+
+    </div>
+    <div class="cart-total"></div>
+  </div>
+
+
+</div>
+
+
+
+
+
+
+
+ <br>
+
+  <footer>
+    <br>
+      <p style="text-align:center"><strong>UvaCanteen.lk All rights reserved.</strong></p>
+    </footer>
+
+</body>
+</html>
